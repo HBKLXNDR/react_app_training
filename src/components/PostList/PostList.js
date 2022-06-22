@@ -8,14 +8,14 @@ const PostList = ({posts, title, remove}) => {
     if (!posts.length) {
         return (
             <h1>
-                Посты не найдены!
+                Posts not found
             </h1>
         )
     }
 
     return (
         <div>
-            <h1 style={{textAlign: 'center'}}>
+            <h1>
                 {title}
             </h1>
             <TransitionGroup>

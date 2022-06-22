@@ -67,14 +67,23 @@
 }
 
 .navbar {
-    height: 50px;
+    height: 100px;
     width: 100vw;
     display: flex;
     align-items: center;
     padding: 0 15px;
-    background: lightgray;
+    background: #19bf55;
+    border-radius: 5px;
 }
 
 .navbar__links {
-    margin-left: auto;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: white;
 }
+
+
+
