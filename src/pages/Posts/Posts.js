@@ -48,7 +48,7 @@ const Posts =()=> {
     return (
         <div className="app">
             <Button  onClick={() => setModal(true)}>
-                Create user
+                Create post
             </Button>
             <Modal visible={modal} setVisible={setModal}>
                 <PostForm create={createPost}/>
