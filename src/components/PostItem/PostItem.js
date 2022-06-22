@@ -1,17 +1,29 @@
 import React from 'react';
+import {useHistory} from "react-router-dom";
+import {Button} from "../Button/Button";
+
 
 const PostItem = (props) => {
+    const router = useHistory()
+
     return (
-            <div className={"post"}>
-                <div className="post__content">
-                    <strong>{props.number}. {props.post.title}</strong>
-                    <div>{props.post.body}</div>
-                </div>
-                <div className="post__btns">
-                    <button>delete</button>
+        <div className="post">
+            <div className="post__content">
+                <strong>{props.post.id}. {props.post.title}</strong>
+                <div>
+                    {props.post.body}
                 </div>
             </div>
+            <div className="post__btns">
+                <Button onClick={() => router.push(`/posts/${props.post.id}`)}>
+                    Open
+                </Button>
+                <Button onClick={() => props.remove(props.post)}>
+                    Delete
+                </Button>
+            </div>
+        </div>
     );
 };
 
-export {PostItem};
+export {PostItem}

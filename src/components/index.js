@@ -3,3 +3,10 @@ export * from "./PostList/PostList";
 export * from "./Button/Button";
 export * from "./Input/Input";
 export * from "./PostForm/PostForm";
+export * from "./Select/Select";
+export * from "./AppRouter/AppRouter";
+export * from "./PostFilter/PostFilter"
+export * from "./Pagination/Pagination";
+export * from "./Navbar/Navbar"
+export * from "./Loader/Loader"
+export * from "./Modal/Modal";
